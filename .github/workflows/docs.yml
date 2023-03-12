@@ -13,9 +13,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: yarn install
+      - run: npm install
       - name: Build
-        run: yarn build
+        run: npm run docs:build
 
       # - name: CreateTag
       #   run git tag -a
